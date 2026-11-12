@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+ï»¿import { useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import {
     FiBookOpen,
@@ -453,7 +453,7 @@ const Policies = () => {
                                             <p className="text-[11px] text-[#94a3b8] mt-1.5">
                                                 {t("adminPolicies.versions", "Versions")}: {policy.versions?.length ?? 0}
                                                 {policy.created_at
-                                                    ? ` · ${new Date(policy.created_at).toLocaleDateString(
+                                                    ? ` Â· ${new Date(policy.created_at).toLocaleDateString(
                                                           lang === "ar" ? "ar-EG" : "en-US",
                                                       )}`
                                                     : ""}
@@ -814,7 +814,7 @@ const Policies = () => {
                                                     </span>
                                                     {(a.old_status || a.new_status) && (
                                                         <span className="text-[11px] font-bold text-[#64748b]">
-                                                            {a.old_status} ? {a.new_status}
+                                                            {a.old_status} â†’ {a.new_status}
                                                         </span>
                                                     )}
                                                 </div>
@@ -826,12 +826,12 @@ const Policies = () => {
                                                 <p className="text-[11px] text-[#94a3b8]">
                                                     {a.performer?.name || `#${a.performed_by}`}
                                                     {a.created_at
-                                                        ? ` · ${new Date(a.created_at).toLocaleString(
+                                                        ? ` Â· ${new Date(a.created_at).toLocaleString(
                                                               lang === "ar" ? "ar-EG" : "en-US",
                                                           )}`
                                                         : ""}
                                                     {a.policy_version
-                                                        ? ` · v${a.policy_version.version}`
+                                                        ? ` Â· v${a.policy_version.version}`
                                                         : ""}
                                                 </p>
                                             </div>
