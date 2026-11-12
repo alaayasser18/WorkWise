@@ -13,7 +13,7 @@ import MainAuthForm from "../components/MainAuthForm";
 
 import { useForgotPassword } from "../hooks/useForgotPassword";
 
-import "../../../styles/auth/ForgotPassword.css";
+import "../../../Styles/auth/ForgotPassword.css";
 
 export default function ForgotPassword() {
   const { t, i18n } = useTranslation();

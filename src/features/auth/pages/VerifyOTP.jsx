@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import toast from "react-hot-toast";
 
-import "../../../styles/auth/VerifyOTP.css";
+import "../../../Styles/auth/VerifyOTP.css";
 import MainAuthForm from "../components/MainAuthForm";
 
 import { useVerifyEmail } from "../hooks/useVerifyEmail";

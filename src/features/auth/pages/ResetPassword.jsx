@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { toast } from "react-hot-toast";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
-import "../../../styles/auth/ResetPassword.css";
+import "../../../Styles/auth/ResetPassword.css";
 
 import MainAuthForm from "../components/MainAuthForm";
 import { useResetPassword } from "../hooks/useResetPassword";
